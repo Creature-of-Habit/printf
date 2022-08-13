@@ -16,7 +16,7 @@ unsigned int handl_buf(char *buff, char ch, unsigned int ibuf)
 		print_buf(buff, ibuf);
 		ibuf = 0;
 	}
-	buf[ibuf] = ch;
+	buff[ibuf] = ch;
 	ibuf++;
 
 	return (ibuf);

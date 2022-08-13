@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_buf - prints buffer
@@ -10,5 +10,5 @@
 
 int print_buf(char *buff, unsigned int n_bytes)
 {
-	return (write(1, buf, n_bytes));
+	return (write(1, buff, n_bytes));
 }
