@@ -13,12 +13,10 @@ int (*get_func(const char *c, int index))(va_list, char *, unsigned int)
 	print_t pr[] = {
 		{"c", print_char}, {"s", print_str},
 		{"i", print_int}, {"d", print_int},
-		/*
-		 * {"b", print_bnr}, {"u", print_unt},
+		{"b", print_binr},/* {"u", print_untr},
 		{"o", print_oct}, {"x", print_hex},
-		{"X", print_upx}, {"S", print_usr},
-		*/
-		{"%", print_ptg}, {NULL, NULL},
+		{"X", print_upx},*/ {"%", print_ptg},
+		{NULL, NULL},
 	};
 	int i = 0, j = 0, f_index;
 
