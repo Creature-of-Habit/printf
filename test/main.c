@@ -15,5 +15,7 @@ int main(void)
        	len = _printf("Percent:[%%]\n");
 	len2 = printf("Percent:[%%]\n");
 
+	_printf("Length:[%d, %i]\n", len, len);
+	printf("Length:[%d, %i]\n", len2, len2);
 	return (0);
 }

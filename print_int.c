@@ -38,7 +38,7 @@ int print_int(va_list args, char *buffer, unsigned int ibuf)
 	}
 	for (i = 0; exponent > 0; exponent /= 10, i++)
 	{
-		ibuf = handl_buf(buffer, ((num / exponent) + '0'), ibuf);
+		ibuf = handl_buf(buffer, ((num / exponent) % 10) + '0', ibuf);
 	}
 	return (i + _ve);
 }
