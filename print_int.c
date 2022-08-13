@@ -20,7 +20,7 @@ int print_int(va_list args, char *buffer, unsigned int ibuf)
 	if (input < 0)
 	{
 		num = input * -1;
-		ibuf = handl_buf(buff, '-', ibuf);
+		ibuf = handl_buf(buffer, '-', ibuf);
 		_ve = 1;
 	}
 	else
@@ -38,7 +38,7 @@ int print_int(va_list args, char *buffer, unsigned int ibuf)
 	}
 	for (i = 0; exponent > 0; exponent /= 10, i++)
 	{
-		ibuf = handl_buf(buf, ((num / exponent) + '0', ibuf);
+		ibuf = handl_buf(buffer, ((num / exponent) + '0'), ibuf);
 	}
 	return (i + _ve);
 }
